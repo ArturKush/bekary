@@ -90,7 +90,7 @@ ul {
 }
 .header_wind:hover {
   transition: 0.2s;
-  background: #ebad51;
+  background: linear-gradient(81deg, #000 -110.34%, rgba(0, 0, 0, 0.00) 80.32%), #ebad51;
 }
 .header_box {
   display: flex;
@@ -243,11 +243,16 @@ ul {
   line-height: normal;
 }
 .quality {
-  height: 852px;
   flex-shrink: 0;
   padding: 104px 0 47px 0;
   background: url(../src/img/Quality.png) 10px 330px / cover no-repeat;
   background-color: #202023;
+}
+.quality_item:nth-child(1) {
+  align-self: flex-start;
+}
+.quality_item:nth-child(3) {
+  align-self: flex-end;
 }
 .quality_list {
   display: flex;
@@ -255,6 +260,7 @@ ul {
   align-items: center;
   margin: 0 auto;
   padding: 0;
+  height: 860px;
 }
 .quality_title {
   text-align: center;
